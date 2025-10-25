@@ -23,7 +23,7 @@ app.use(express.json());
     }
     console.log("✅ Database ready");
   } catch (err) {
-    console.error("❌ Database init failed:", err);
+    console.error("❌ Database init failed faga:", err);
   }
 })();
 
