@@ -3,6 +3,9 @@ name: Build & Push Backend Image
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'sourcecode/backend/**'  
+      - '.github/workflows/backend.yml' 
 
 jobs:
   build-backend:

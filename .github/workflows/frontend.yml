@@ -3,6 +3,9 @@ name: Build & Push Frontend Image
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'sourcecode/frontend/**' 
+      - '.github/workflows/frontend.yml'
 
 jobs:
   build-frontend:
