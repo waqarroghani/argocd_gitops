@@ -24,7 +24,7 @@ jobs:
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
-          context: ./sourcecode/frontend      # 👈 your frontend directory
+          context: ./sourcecode/frontend     
           file: ./sourcecode/frontend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME}}/visitor-frontend:latest
