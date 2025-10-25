@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Initialize DB and create table if not exists
+
 (async () => {
   try {
     await pool.query(`
@@ -27,7 +27,7 @@ app.use(express.json());
   }
 })();
 
-// Endpoint: increase and return count
+
 app.get("/api/visit", async (req, res) => {
   try {
     const updated = await pool.query(
